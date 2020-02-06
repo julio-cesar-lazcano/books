@@ -1,0 +1,40 @@
+<odoo>
+
+<template id="checkout" name="Checkout Form">
+<t t-call="website.layout">
+  <div class="oe_structure">
+          <script type="text/javascript">
+            window.setTimeout(function() {
+                $(".alert").fadeTo(500, 0).slideUp(500, function(){
+                    $(this).remove(); 
+                });
+            }, 4000);
+    </script>
+  </div>
+  <div id="textareastyle" class="textareastyle">
+    <label class="tittleoff">Escrible la descripción de cada Libro</label>
+    <br/>
+    <form action="/signup" name="Form" >
+      <br/>
+      <t t-if="message">
+      <div class="alert alert-success" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close"></button>
+          <t t-esc="message"/>
+      </div>
+      </t>
+      <br/>
+      <t t-foreach="names" t-as="i">
+        <label>
+            <t t-esc="i" />
+            <input type="text" t-att-name="i" />
+        </label>
+      </t>
+      <div id="divbuttom" class="divbuttom">
+        <input type="submit" value="Enviar" class="bottom_send"/>
+      </div>
+    </form>
+  </div>
+</t>
+</template>
+
+</odoo>

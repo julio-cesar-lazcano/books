@@ -1,0 +1,33 @@
+.text-strikeout { 
+    text-decoration: line-through; 
+} 
+
+.textareastyle{
+	width: 90%;
+    padding-left: 5%;
+    padding-top: 50px;
+    font-style: oblique;
+}
+
+
+.tittleoff{
+	width: 100%;
+    padding-left: 0;
+    text-align: -webkit-center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.bottom_send{
+    width: 50%;
+    color: blue;
+    background: cornsilk;
+    border-radius: initial;
+}
+
+.divbuttom{
+    padding-left: 34%;
+    padding-top: 10px;
+
+}
