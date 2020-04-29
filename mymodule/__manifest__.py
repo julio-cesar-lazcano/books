@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "mymodule",
+    'name': "Mexico",
 
     'summary': """
         Modulo creado para llenar las descriciones de los libros""",
